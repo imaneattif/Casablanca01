@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities in Casablanca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navMenu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="history.html">History</a></li>
+                <li class="nav-item"><a href="activities.html">Activities & Events</a></li>
+                <li class="nav-item"><a href="culture.html">Culture</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+        <main>
+            <h1>Activities & Events in Casablanca</h1>
+            <div id="slideshow">
+                <div class="slide" style="background-image: url('images/activity1.jpg');">
+                    <div class="slide-caption">Explore the Medina</div>
+                </div>
+                <div class="slide" style="background-image: url('images/activity2.jpg');">
+                    <div class="slide-caption">Visit Hassan II Mosque</div>
+                </div>
+                
+
+                <div class="slide" style="background-image: url('images/activity3.jpg');">
+                     <div class="slide-caption">Beachside Fun at Ain Diab</div>
+               </div>
+
+                 <div class="slide" style="background-image: url('images/activity4.jpg');">
+                      <div class="slide-caption">Shopping at Morocco Mall</div>
+               </div>
+
+                 <div class="slide" style="background-image: url('images/activity6.jpg');">
+                      <div class="slide-caption">Vibrant Nightlife</div>
+               </div>
+
+            </div>
+            
+            <section id="event-scheduling">
+                <h2>Schedule an Activity</h2>
+                <form id="scheduleForm">
+                    <label for="activitySelect">Choose an Activity:</label>
+                    <select id="activitySelect" name="activity">
+                        <option value="medina">Explore the Medina</option>
+                        <option value="mosque">Visit Hassan II Mosque</option>
+                        <option value="beach">Beachside Fun at Ain Diab</option>
+                        <option value="shopping">Shopping at Morocco Mall</option>
+                        <option value="nightlife">Vibrant Nightlife</option>
+                    </select>
+        
+                    <label for="activityDate">Choose a Date:</label>
+                    <input type="text" id="activityDate" name="date">
+        
+                    <button type="submit">Schedule</button>
+                </form>
+            </section>
+        </main>
+
+
+    <footer>
+        <p>&copy; 2023 Casablanca Exploration. All rights reserved.</p>
+        <div id="currentDateTime"></div>
+
+    </footer>
+    <script src="activities.js"></script>
+    <script src="datetime.js"></script>
+
+</body>
+</html>

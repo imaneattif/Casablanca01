@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Casablanca</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        
+            <img id="mosqueImage" src="images/mosque.jpg" alt="Casablanca Mosque">
+            
+            <nav>
+                <ul id="navMenu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="history.html">History</a></li>
+                    <li class="nav-item"><a href="activities.html">Activities & Events</a></li>
+                    <li class="nav-item"><a href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+    </header>
+    <main>
+        <h1>Welcome to Casablanca</h1>
+        <p>Explore the rich history, vibrant culture, and exciting activities of this beautiful city.</p>
+
+<section id="featured-attractions">
+    <h2>Featured Attractions in Casablanca</h2>
+    
+    <div class="attraction">
+        <img src="images/hassan-mosque.jpg" alt="Hassan II Mosque">
+        <h3>Hassan II Mosque</h3>
+        <p>One of the largest mosques in the world, featuring stunning architecture and an oceanfront setting.</p>
+    </div>
+
+    <div class="attraction">
+        <img src="images/corniche.jpg" alt="The Corniche">
+        <h3>The Corniche</h3>
+        <p>A scenic waterfront promenade, perfect for leisurely walks, dining, and enjoying the ocean views.</p>
+    </div>
+
+    <div class="attraction">
+        <img src="images/medina1.jpg" alt="Old Medina">
+        <h3>Old Medina</h3>
+        <p>Explore the traditional side of Casablanca in the Old Medina, a labyrinth of narrow streets and historic buildings.</p>
+    </div>
+
+    <div class="attraction">
+        <img src="images/morocco-mall.jpg" alt="Morocco Mall">
+        <h3>Morocco Mall</h3>
+        <p>One of the largest shopping centers in Africa, offering a wide range of shops, entertainment, and dining options.</p>
+    </div>
+
+    <div class="attraction">
+        <img src="images/mahkama-du-pacha.jpg" alt="Mahkama du Pacha">
+        <h3>Mahkama du Pacha</h3>
+        <p>A historic building known for its stunning Moorish architecture, intricate wood carvings, and beautiful tile work.</p>
+    </div>
+
+</section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Casablanca Exploration. All rights reserved.</p>
+        <div id="currentDateTime"></div>
+        <script src="datetime.js"></script>
+
+
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#navMenu .nav-item').on('mouseover', function() {
+                $(this).css({'color': '#4B3832', 'font-weight': 'bold'});
+            }).on('mouseout', function() {
+                $(this).css({'color': 'black', 'font-weight': 'normal'});
+            });
+        });
+    </script>
+</body>
+</html>
